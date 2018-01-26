@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <RootHeader></RootHeader>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 <script>
-import Header from './components/root/header.vue'
+import RootHeader from './components/root/header/main.vue'
+
 export default {
   components: {
-    Header
+    RootHeader
   }
 }
 </script>
