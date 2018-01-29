@@ -1,5 +1,5 @@
 <script>
-import http from '../../../http'
+import http from 'src/http'
 
 export default {
   mounted () {
