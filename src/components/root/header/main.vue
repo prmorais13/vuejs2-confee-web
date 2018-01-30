@@ -1,11 +1,12 @@
 <script>
 import Left from './left'
 import Brand from './brand'
+import Right from './right'
 
 export default {
   name: 'ConfeeHeader',
   components: {
-    Left, Brand
+    Left, Brand, Right
   },
   data () {
     return { isOpen: false }
@@ -16,7 +17,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <template>
@@ -26,8 +26,8 @@ export default {
 
          <div class="collapse navbar-collapse" :class="{ in: isOpen }">
             <Left/>
+            <Right/>
          </div>
-
       </div>
    </nav>
 </template>
